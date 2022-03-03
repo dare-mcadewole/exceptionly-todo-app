@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     setFilteredTodos(todos.filter((t) => t.name.indexOf(searchKey) !== -1))
-  }, [searchKey])
+  }, [searchKey, todos])
 
   const add = (ev) => {
     ev.preventDefault();
