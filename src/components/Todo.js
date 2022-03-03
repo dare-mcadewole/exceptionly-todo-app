@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ({ todo, remove, toggleDone }) {
+export default function Todo ({ todo, remove, toggleDone }) {
     const rawDate = new Date(todo.date)
     const date = `${rawDate.getDate()}/${rawDate.getMonth()}/${rawDate.getFullYear()}`
     const time = `${rawDate.getHours()}:${rawDate.getMinutes()}`

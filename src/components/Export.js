@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ({ todos }) {
+export default function Export ({ todos }) {
     const exportTodo = () => {
         const header = `S/N,Item,Status,Date`
         let content = `data:text/csv;charset=utf-8,${header}\r\n`;
